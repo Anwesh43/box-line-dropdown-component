@@ -3,7 +3,7 @@ import { sinify, divideScale } from './ho'
 
 export const useAnimatedScale = (scGap = 0.02, delay = 20) => {
     const [animated, setAnimated] = useState(false)
-    const [interval, setInterval] = useState(false)
+    const [scale, setScale] = useState(0)
     return {
         scale, 
         start() {
