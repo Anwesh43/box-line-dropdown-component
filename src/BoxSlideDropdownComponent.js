@@ -1,13 +1,13 @@
 import React from 'react'
 import { useAnimatedScale, useDimension } from './hooks'
-
+import BoxSlideDropdown from './BoxSlideDropdown'
 const BoxSlideDropdownComponent = (props) => {
     const {w, h} = useDimension()
     const {scale, start} = useAnimatedScale(0.01, 20)
     return (
       <div>
-        <BoxSlideDropdownComponent w = {w} h = {h} onClick = {start} scale = {scale}>
-        </BoxSlideDropdownComponent>
+        <BoxSlideDropdown w = {w} h = {h} onClick = {start} scale = {scale}>
+        </BoxSlideDropdown>
       </div>
     )
 }
